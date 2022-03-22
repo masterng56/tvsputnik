@@ -568,6 +568,7 @@
             -o-border-radius: 8px;
             background-color: rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(20px);
+            cursor: pointer;
         }
         
         .white_btn:before {
@@ -598,3 +599,209 @@
         .white_btn:hover {
             background-color: rgba(239, 239, 239, 0.1);
         }
+        /* main */
+        /* tech_maintenance */
+        
+        .section_title {
+            max-width: 450px;
+            margin-top: 80px;
+            margin-bottom: 40px;
+        }
+        
+        @media(max-width:768px) {
+            .section_title {
+                font-weight: 700;
+                font-size: 34px;
+                line-height: 34px;
+            }
+        }
+        
+        .tech_maintenance_wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 80px;
+            justify-content: center;
+        }
+        
+        .tech_maintenance_item {
+            height: 322px;
+            width: 260px;
+            text-align: center;
+        }
+        
+        @media(min-width:1440px) {
+            .tech_maintenance_item {
+                width: 301px;
+            }
+        }
+        
+        .tech_maintenance_img {
+            border: 2px solid rgba(228, 228, 228, 1);
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            padding: 30px;
+        }
+        
+        .item_title {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 26px;
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 10px;
+        }
+        
+        .maintenance_hr {
+            margin-top: 40px;
+        }
+        /* ation */
+        
+        .hr_wrapper {
+            display: flex;
+        }
+        
+        .left {
+            width: 50%;
+            border-right: 1px solid #E4E4E4;
+            margin-bottom: 40px;
+        }
+        
+        @media(max-width:480px) {
+            .left {
+                border-right: 0;
+                margin-bottom: 0px;
+            }
+        }
+        
+        .actions_wrapper {
+            display: flex;
+            gap: 2px;
+            flex-wrap: wrap;
+            justify-content: stretch;
+            align-items: stretch;
+        }
+        
+        .ations_item {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 20px 12px;
+            color: #fff;
+            width: 32.33%;
+            height: auto;
+            background-position: 50% 10%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        @media(max-width:1200px) {
+            .ations_item {
+                width: 49.33%;
+            }
+        }
+        
+        @media(max-width:480px) {
+            .ations_item {
+                width: 100%;
+            }
+        }
+        
+        .telecarta {
+            background-image: url(../img/action-telekarta.png);
+        }
+        
+        .tricolor {
+            background-image: url(../img/action-tricolor.png);
+        }
+        
+        .tvsputnik {
+            background-image: url(../img/action-tvsputnik.png);
+        }
+        
+        .item_description {
+            text-align: center;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 26px;
+        }
+        /* device */
+        
+        .devices_slider_iem {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .devices_slider_iem img {
+            border: 2px solid rgba(228, 228, 228, 1);
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            width: 190px;
+            height: 190px;
+        }
+        
+        .devices_slider_title {
+            margin-top: 10px;
+        }
+        /* slick-slider */
+        
+        .slick-slider {}
+        /* Слайдер запущен */
+        
+        .slick-slider.slick-initialized {}
+        /* Слайдер с точками */
+        
+        .slick-slider.slick-dotted {}
+        /* Ограничивающая оболочка */
+        
+        .slick-list {}
+        /* Лента слайдов */
+        
+        .slick-track {}
+        /* Слайд */
+        
+        .slick-slide {}
+        /* Слайд активный (показывается) */
+        
+        .slick-slide.slick-active {}
+        /* Слайд основной */
+        
+        .slick-slide.slick-current {}
+        /* Слайд по центру */
+        
+        .slick-slide.slick-center {}
+        /* Клонированный слайд */
+        
+        .slick-slide.slick-cloned {}
+        /* Стрелка */
+        
+        .slick-arrow {}
+        /* Стрелка влево */
+        
+        .slick-arrow.slick-prev {}
+        /* Стрелка вправо */
+        
+        .slick-arrow.slick-next {}
+        /* Стрелка не активная */
+        
+        .slick-arrow.slick-disabled {}
+        /* Точки (булиты) */
+        
+        .slick-dots {}
+        
+        .slick-dots li {}
+        /* Активная точка */
+        
+        .slick-dots li.slick-active {}
+        /* Элемент точки */
+        
+        .slick-dots li button {}
