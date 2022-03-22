@@ -747,6 +747,7 @@
             -o-border-radius: 50%;
             width: 190px;
             height: 190px;
+            margin: 0 auto;
         }
         
         .devices_slider_title {
@@ -784,7 +785,9 @@
         .slick-slide.slick-cloned {}
         /* Стрелка */
         
-        .slick-arrow {}
+        .slick-arrow {
+            display: none;
+        }
         /* Стрелка влево */
         
         .slick-arrow.slick-prev {}
