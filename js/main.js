@@ -30,6 +30,14 @@ $(document).ready(function() {
                     slidesToScroll: 1
                 }
             },
+
+            {
+                breakpoint: 711,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
             {
                 breakpoint: 481,
                 settings: {
