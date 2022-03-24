@@ -6,6 +6,24 @@ $(document).ready(function() {
         autoplay: true,
         autoplaySpeed: 2000,
         responsive: [{
+                breakpoint: 1440,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+
+
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+
+
+                }
+            },
+            {
                 breakpoint: 1025,
                 settings: {
                     slidesToShow: 4,
@@ -17,7 +35,7 @@ $(document).ready(function() {
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 4,
+                    slidesToShow: 3,
                     slidesToScroll: 1,
 
 
@@ -41,17 +59,11 @@ $(document).ready(function() {
             {
                 breakpoint: 481,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 361,
-                settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
                 }
-            }
+            },
+
         ]
     });
 });
