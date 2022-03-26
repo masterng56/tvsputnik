@@ -726,6 +726,18 @@ background-position: 0% 50%;
         margin-bottom: 40px;
     }
     
+    @media(max-width:1023px) {
+        .hr_none {
+            border-right: 0;
+        }
+    }
+    
+    @media(max-width:640px) {
+        .left {
+            border-right: 0;
+        }
+    }
+    
     @media(max-width:480px) {
         .left {
             border-right: 0;
@@ -1113,4 +1125,184 @@ background-position: 0% 50%;
     
     .install_item_description {
         margin: 0;
+    }
+    /* about */
+    
+    .about {
+        padding-bottom: 80px;
+    }
+    /* location */
+    
+    .location {
+        display: flex;
+        margin-top: 0;
+    }
+    
+    @media(max-width:640px) {
+        .location {
+            flex-direction: column;
+        }
+    }
+    
+    .location_description,
+    .location_title {
+        width: 50%;
+    }
+    
+    @media(max-width:640px) {
+        .location_description,
+        .location_title {
+            width: auto;
+        }
+    }
+    /* features */
+    
+    .features_title {
+        margin-top: 80px;
+    }
+    
+    .features {
+        display: flex;
+        margin-top: 40px;
+    }
+    
+    @media(max-width:640px) {
+        .features {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    
+    .features_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    @media(max-width:640px) {
+        .features_item {
+            border-bottom: #D8D8D8 2px solid;
+            width: 100%;
+        }
+    }
+    
+    .features_wrapper {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+        text-align: center;
+    }
+    
+    @media(max-width:640px) {
+        .features_wrapper {
+            width: 100%;
+            text-align: center;
+            gap: 0;
+        }
+    }
+    
+    .features_item_title {
+        color: #063971;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 39px;
+        text-transform: uppercase;
+    }
+    
+    @media(max-width:640px) {
+        .features_item_title {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 26px;
+            margin-bottom: 10px;
+        }
+    }
+    
+    @media(max-width:640px) {
+        .features_description {
+            font-size: 16px;
+            line-height: 21px;
+            margin-bottom: 20px;
+        }
+    }
+    
+    @media(max-width:640px) {
+        .features_wrapper.left {
+            margin-bottom: 0;
+        }
+    }
+    /* partners */
+    
+    .partners,
+    .certificate {
+        margin-top: 80px;
+    }
+    
+    .partners_wrapper {
+        display: flex;
+        gap: 80px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    @media(max-width:640px) {
+        .partners_wrapper {
+            margin-top: 40px;
+            gap: 20px;
+        }
+    }
+    
+    @media(max-width:480px) {
+        .partners_wrapper {
+            /* gap: 20px; */
+        }
+    }
+    
+    .partners_item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+    }
+    
+    @media(max-width:480px) {
+        .partners_item {
+            border-bottom: #D8D8D8 2px solid;
+            width: 100%;
+            padding-bottom: 20px;
+        }
+    }
+    
+    @media(max-width:480px) {
+        .partners_wrapper {
+            flex-direction: column;
+        }
+    }
+    /* certificate */
+    
+    .certificate_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+    
+    @media(max-width:480px) {
+        .certificate_wrapper {
+            flex-direction: column;
+        }
+    }
+    
+    .certificate_wrapper img {
+        width: 33.33%;
+        height: auto;
+    }
+    
+    @media(max-width:480px) {
+        .certificate_wrapper img {
+            width: 100%;
+            height: auto;
+        }
     }
