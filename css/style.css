@@ -923,16 +923,6 @@ background-position: 0% 50%;
         height: 40px;
         z-index: 10;
     }
-    
-    .reviews_slider .slick-arrow {
-        position: absolute;
-        top: 50%;
-        margin: -45px 0 0 0;
-        font-size: 0;
-        width: 40px;
-        height: 40px;
-        z-index: 10;
-    }
     /* Стрелка влево */
     
     .slick-arrow.slick-prev {
@@ -1305,6 +1295,7 @@ background-position: 0% 50%;
     /* reviews_slider */
     
     .reviews_slider {
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1314,6 +1305,14 @@ background-position: 0% 50%;
     
     .reviews_slider .slick-list {
         width: 680px;
+    }
+    
+    .reviews_slider .slick-arrow {
+        position: absolute;
+        font-size: 0;
+        width: 40px;
+        height: 40px;
+        z-index: 20;
     }
     
     .reviews_slider .slick-slide>div {
@@ -1330,19 +1329,16 @@ background-position: 0% 50%;
     
     .slick-current .reviews_item {
         margin: 0 20px;
-        height: 390px;
+        /* height: 390px; */
     }
     
     .slick-current .reviews_item_img {
-        border-radius: 50%;
         height: 190px;
         width: 190px;
     }
     
     .reviews_item_img {
         border-radius: 50%;
-        height: 95px;
-        width: 95px;
     }
     
     .reviews_item_title {
@@ -1351,11 +1347,6 @@ background-position: 0% 50%;
         text-transform: uppercase;
         color: #063971;
         margin-top: 20px;
-        display: none;
-    }
-    
-    .slick-current .reviews_item_title {
-        display: block;
     }
     
     .reviews_item_text {
@@ -1363,25 +1354,6 @@ background-position: 0% 50%;
     }
     
     .slick-current .reviews_item_text {
-        /* position: absolute;
-        bottom: 30px;
-        left: -100px; */
         display: flex;
         justify-content: center;
-    }
-    
-    .reviews_slider .slick-slide {
-        display: none;
-    }
-    
-    .reviews_slider .slick-active {
-        display: block;
-    }
-    
-    .reviews_slider .slick-list {
-        position: relative;
-    }
-    
-    .reviews_item_text {
-        display: none;
     }
