@@ -89,5 +89,19 @@ $(document).ready(function() {
         ]
     });
 
-
+    $('.reviews_slider').slick({
+        infinite: true,
+        centerMode: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        variableWidth: true,
+        // adaptiveHeight: true,
+        // centerPadding: '60px',
+        autoplay: true,
+        // easing: 'easeOutElastic',
+        // cssEase: "cubic-bezier(0.175, 0.885, 0.32, 1.275)",
+        // focusOnSelect: true,
+        // fade: true,
+        autoplaySpeed: 2000
+    });
 });
