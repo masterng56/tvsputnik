@@ -1404,185 +1404,116 @@ background-position: 0% 50%;
     .accordion_title:hover {
         color: #063971;
     }
-    /* .transition,
-    .accordion_item i:before,
-    .accordion_item i:after,
-    .accordion_text {
-        transition: all 0.25s ease-in-out;
+    /* 
+
+    contacts_wrapper 
+
+    */
+    
+    .contacts_wrapper {
+        display: flex;
+        justify-content: space-between;
     }
     
-    .flipIn,
-    .accordion_item {
-        -webkit-animation: flipdown 0.5s ease both;
-        animation: flipdown 0.5s ease both;
+    .contacts_item {
+        width: 50%;
     }
     
-    .no-select,
-    .accordion_title {
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
+    .contacts_phones,
+    .contacts_master,
+    .contacts_messangers {
+        display: flex;
+        align-items: center;
     }
     
-    .accordion_text {
-        color: rgba(48, 69, 92, 0.8);
-        font-size: 17px;
-        line-height: 26px;
-        letter-spacing: 1px;
-        position: relative;
-        overflow: hidden;
-        max-height: 800px;
+    .contacts_ico {
+        margin-right: 20px;
+    }
+    
+    .contacts_master,
+    .contacts_messangers {
+        margin-top: 40px;
+    }
+    
+    .online {
+        display: flex;
+        align-items: center;
+    }
+    
+    .online>span {
+        margin-right: 40px;
+    }
+    
+    .messangers_wrapper {
+        display: flex;
+        align-items: center;
+    }
+    
+    .contacts_form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    
+    .form_title {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 39px;
+    }
+    
+    .btn_form {
+        height: 36px;
+        width: 300px;
+        margin-top: 40px;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .form_input {
+        width: 460px;
+        border: 0;
+        border-bottom: 1px solid #E4E4E4;
+        color: #063971;
+        padding: 10px;
+    }
+    
+    .form_input:focus {
+        border-bottom: 1px solid #063971;
+        color: #063971;
+        text-transform: uppercase;
+    }
+    
+    .form_error {
+        border-bottom: 1px solid #FF4F37;
+        color: #FF4F37;
+    }
+    
+    .form_input::-webkit-input-placeholder {
         opacity: 1;
-        transform: translate(0, 0);
-        margin-top: 14px;
-        z-index: 2;
+        color: #000;
     }
     
-    .accordion_list {
-        list-style: none;
-        perspective: 900;
-        padding: 0;
-        margin: 0;
+    .form_input::-moz-placeholder {
+        opacity: 1;
+        color: #000;
     }
     
-    .accordion_item {
-        position: relative;
-        padding: 0;
-        margin: 0;
-        padding-bottom: 4px;
-        padding-top: 18px;
-        border-top: 1px dotted #dce7eb;
+    .form_input:-ms-input-placeholder {
+        opacity: 1;
+        color: #000;
     }
     
-    .accordion_item:nth-of-type(1) {
-        -webkit-animation-delay: 0.5s;
-        animation-delay: 0.5s;
+    .form_input::-ms-input-placeholder {
+        opacity: 1;
+        color: #000;
     }
     
-    .accordion_item:nth-of-type(2) {
-        -webkit-animation-delay: 0.75s;
-        animation-delay: 0.75s;
+    .form_input::placeholder {
+        opacity: 1;
+        color: #000;
     }
-    
-    .accordion_item:nth-of-type(3) {
-        -webkit-animation-delay: 1s;
-        animation-delay: 1s;
-    }
-    
-    .accordion_item:nth-of-type(4) {
-        -webkit-animation-delay: 1s;
-        animation-delay: 1.5s;
-    }
-    
-    .accordion_item:nth-of-type(5) {
-        -webkit-animation-delay: 1s;
-        animation-delay: 1.75s;
-    }
-    
-    .accordion_item:nth-of-type(6) {
-        -webkit-animation-delay: 1s;
-        animation-delay: 2s;
-    }
-    
-    .accordion_item:last-of-type {
-        padding-bottom: 0;
-    }
-    
-    .accordion_item i {
-        position: absolute;
-        transform: translate(-6px, 0);
-        margin-top: 16px;
-        right: 0;
-    }
-    
-    .accordion_item:before,
-    .accordion_item:after {
-        content: "";
-        position: absolute;
-        background-color: #ff6873;
-        width: 3px;
-        height: 9px;
-    }
-    
-    .accordion_item i:before {
-        transform: translate(-2px, 0) rotate(45deg);
-    }
-    
-    .accordion_item:after {
-        transform: translate(2px, 0) rotate(-45deg);
-    }
-    
-    .accordion_item input[type=checkbox] {
-        position: absolute;
-        cursor: pointer;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        opacity: 0;
-    }
-    
-    .accordion_item input[type=checkbox]:checked~p {
-        margin-top: 0;
-        max-height: 0;
-        opacity: 0;
-        transform: translate(0, 50%);
-    }
-    
-    .accordion_item input[type=checkbox]:checked~i:before {
-        transform: translate(2px, 0) rotate(45deg);
-    }
-    
-    .accordion_item input[type=checkbox]:checked~i:after {
-        transform: translate(-2px, 0) rotate(-45deg);
-    }
-    
-    @-webkit-keyframes flipdown {
-        0% {
-            opacity: 0;
-            transform-origin: top center;
-            transform: rotateX(-90deg);
-        }
-        5% {
-            opacity: 1;
-        }
-        80% {
-            transform: rotateX(8deg);
-        }
-        83% {
-            transform: rotateX(6deg);
-        }
-        92% {
-            transform: rotateX(-3deg);
-        }
-        100% {
-            transform-origin: top center;
-            transform: rotateX(0deg);
-        }
-    }
-    
-    @keyframes flipdown {
-        0% {
-            opacity: 0;
-            transform-origin: top center;
-            transform: rotateX(-90deg);
-        }
-        5% {
-            opacity: 1;
-        }
-        80% {
-            transform: rotateX(8deg);
-        }
-        83% {
-            transform: rotateX(6deg);
-        }
-        92% {
-            transform: rotateX(-3deg);
-        }
-        100% {
-            transform-origin: top center;
-            transform: rotateX(0deg);
-        }
-    } */
