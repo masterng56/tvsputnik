@@ -1366,17 +1366,18 @@ background-position: 0% 50%;
     
     .item_content {
         display: none;
+        transition: all 1s linear 0s;
     }
     
     .accordion_item {
         list-style-type: none;
         border-bottom: 1px solid #E4E4E4;
         width: 100%;
-        transition-duration: 1s;
     }
     
     .accordion_item_active .item_content {
         display: block;
+        transition: all 1s linear 0s;
     }
     
     .accordion_title {
@@ -1391,10 +1392,13 @@ background-position: 0% 50%;
         width: 26px;
         right: 0;
         background-image: url(../img/angle-down.svg);
+        transition: all 0.5s linear 0s;
     }
     
     .accordion_item_active .accordion_title::after {
         transform: translate(-2px, 0) rotate(180deg);
+        transition: all 0.5s linear 0s;
+        color: #063971;
     }
     
     .accordion_title:hover {
