@@ -557,6 +557,7 @@ background-position: 0% 50%;
     @media(max-width:480px) {
         .offer_buttons {
             text-align: center;
+            margin: 0 auto;
         }
     }
     
@@ -644,11 +645,33 @@ background-position: 0% 50%;
         }
     }
     
+    @media(max-width:768px) {
+        .tech_maintenance .section_title {
+            font-weight: 700;
+            font-size: 34px;
+            line-height: 34px;
+            margin-top: 80px;
+            margin-bottom: 40px;
+        }
+    }
+    
     .tech_maintenance_wrapper {
         display: flex;
         flex-wrap: wrap;
         gap: 80px;
         justify-content: center;
+    }
+    
+    @media(min-width:1600px) {
+        .tech_maintenance_wrapper {
+            gap: 140px;
+        }
+    }
+    
+    @media(min-width:1024px) {
+        .tech_maintenance_wrapper {
+            padding-bottom: 40px;
+        }
     }
     
     @media(max-width:768px) {
@@ -1873,6 +1896,13 @@ background-position: 0% 50%;
         .icon_address,
         .icon_map {
             width: 46px;
+        }
+    }
+    
+    @media(max-width:479px) {
+        .icon_address,
+        .icon_map {
+            width: 55px;
         }
     }
     
