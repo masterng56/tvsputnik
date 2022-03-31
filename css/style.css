@@ -446,12 +446,8 @@ background-position: 0% 50%;
     }
     
     .menu_list {
-        display: none;
-        list-style: none;
-    }
-    
-    .menu_show {
         display: flex;
+        list-style: none;
     }
     
     .menu_hide {
@@ -460,7 +456,7 @@ background-position: 0% 50%;
     
     @media(max-width: 727px) {
         .menu_list {
-            /* display: none; */
+            display: none;
             position: absolute;
             top: 50px;
             right: 0;
@@ -479,6 +475,10 @@ background-position: 0% 50%;
         .menu_link {
             padding: 10px 0;
         }
+    }
+    
+    .menu_show {
+        display: flex;
     }
     
     .menu_item {

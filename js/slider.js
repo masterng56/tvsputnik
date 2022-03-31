@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('.devices_slider').slick({
-        infinite: false,
+        infinite: true,
         slidesToShow: 6,
         slidesToScroll: 1,
         autoplay: true,
@@ -94,7 +94,7 @@ $(document).ready(function() {
         slidesToScroll: 1,
         adaptiveHeight: true,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 2000,
         responsive: [{
             breakpoint: 769,
             settings: {
