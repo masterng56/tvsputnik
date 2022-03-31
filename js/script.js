@@ -1,4 +1,5 @@
 window.addEventListener('load', function() {
+    // Burger Menu
     let menuBtn = document.querySelector('.burger');
     let menuList = document.querySelector('.menu_list');
     menuBtn.addEventListener('click', function() {
@@ -11,5 +12,6 @@ window.addEventListener('load', function() {
             menuList.classList.toggle('menu_show');
         }
     });
+    //messengers
 
 });
