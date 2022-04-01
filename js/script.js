@@ -14,20 +14,20 @@ window.addEventListener('load', function() {
     });
     //Скролл
     let menu = document.querySelector('.menu');
-    // let btnUp = document.querySelector('.btnUp');
-    let links = document.querySelectorAll('a');
+    let btnUp = document.querySelector('.btnUp');
+    // let links = document.querySelectorAll('a');
     let scrollTimeout;
 
 
-    // window.addEventListener('scroll', function() {
-    //     clearTimeout(scrollTimeout); //Функция clearTimeout() отменяет ранее установленный вызов функции
-    //     scrollTimeout = setTimeout(onScroll, 200);
-    // });
+    window.addEventListener('scroll', function() {
+        clearTimeout(scrollTimeout); //Функция clearTimeout() отменяет ранее установленный вызов функции
+        scrollTimeout = setTimeout(onScroll, 200);
+    });
 
     // нажатие на кнопку скролит вверх
-    // btnUp.addEventListener('click', function(e) {
-    //     window.scrollTo({ top: 0, behavior: 'smooth' });
-    // });
+    btnUp.addEventListener('click', function(e) {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 
     menu.addEventListener('click', function(e) {
         let link = e.target;
@@ -43,8 +43,6 @@ window.addEventListener('load', function() {
         scrollToTarget(location.hash);
     }
 
-
-
     function scrollToTarget(id) {
         let target = document.querySelector(id);
 
@@ -56,31 +54,21 @@ window.addEventListener('load', function() {
                 behavior: 'smooth'
             });
         }
+    }
+
+    //управляет видимостью кнопки вверх, подсвечивает активный пункт меню
+    function onScroll() {
+        let pos = window.pageYOffset;
+
+        if (pos > window.innerHeight) {
+            //window.innerHeight это высота окна
+            btnUp.classList.add('btnUp-visible');
+        } else {
+            btnUp.classList.remove('btnUp-visible');
+        }
+
 
     }
-    // управляет видимостью кнопки вверх, подсвечивает активный пункт меню
-    // function onScroll() {
-    //     let pos = window.pageYOffset;
-
-    //     if (pos > window.innerHeight) {
-    //         //window.innerHeight это высота окна
-    //         btnUp.classList.add('btnUp-visible');
-    //     } else {
-    //         btnUp.classList.remove('btnUp-visible');
-    //     }
-
-    //     for (let i = links.length - 1; i >= 0; i--) {
-    //         let link = links[i];
-    //         let target = document.querySelector(link.hash);
-    //         // .hash часть URL, которая идет после символа решетки '#', включая символ '#'
-    //         if ((pos + window.innerHeight / 2) > target.offsetTop) {
-    //             // что делать если последний елемент маленький, нужно ли подсвечивать его в меню данный код pos + window.innerHeight / 2 отрабатывает на половине высоты окна браузера. Если убрать /2 то подсвечиваться елемент будет сразу при появлении внизу окна.
-    //             menu.querySelector('.menu__link-active').classList.remove('menu__link-active');
-    //             link.classList.add('menu__link-active');
-    //             break; // первый найденный заголовок будет активным, выход из цикла
-    //         }
-    //     }
-    // }
 
 
 });
