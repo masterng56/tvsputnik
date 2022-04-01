@@ -12,12 +12,11 @@ window.addEventListener('load', function() {
             menuList.classList.toggle('menu_show');
         }
     });
-    //Скролл
+    //Скролл для меню и кнопки вверх
     let menu = document.querySelector('.menu');
     let btnUp = document.querySelector('.btnUp');
-    // let links = document.querySelectorAll('a');
-    let scrollTimeout;
 
+    let scrollTimeout;
 
     window.addEventListener('scroll', function() {
         clearTimeout(scrollTimeout); //Функция clearTimeout() отменяет ранее установленный вызов функции
@@ -66,7 +65,6 @@ window.addEventListener('load', function() {
         } else {
             btnUp.classList.remove('btnUp-visible');
         }
-
 
     }
 
