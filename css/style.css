@@ -663,6 +663,12 @@ background-position: 0% 50%;
         -o-border-radius: 8px;
     }
     
+    @media(max-width:360px) {
+        .white_btn {
+            width: 250px;
+        }
+    }
+    
     @media(max-width:480px) {
         .white_btn {
             text-align: center;

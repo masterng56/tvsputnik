@@ -60,7 +60,7 @@ window.addEventListener('load', function() {
     function onScroll() {
         let pos = window.pageYOffset;
 
-        if (pos > window.innerHeight) {
+        if (pos > window.innerHeight / 2) {
             //window.innerHeight это высота окна
             btnUp.classList.add('btnUp-visible');
         } else {
