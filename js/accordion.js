@@ -2,7 +2,6 @@ window.addEventListener('load', function() {
     document.querySelectorAll('.accordion_title').forEach((item) => item.addEventListener('click', () => {
         const parent = item.parentNode;
 
-
         if (parent.classList.contains('accordion_item_active')) {
             parent.classList.remove('accordion_item_active');
         } else {
@@ -13,34 +12,35 @@ window.addEventListener('load', function() {
     }));
 
     //Аккордион
-    // let faq = document.querySelector('.accordion_list');
+    let faq = document.querySelector('.accordion_list');
 
-    // faq.addEventListener('click', function(e) {
-    //     if (e.target.classList.contains('accordion_title')) {
-    //         toogleItem(e.target);
-    //     }
-    // });
+    faq.addEventListener('click', function(e) {
+        if (e.target.classList.contains('accordion_title')) {
+            toogleItem(e.target);
 
-    // function toogleItem(ask) {
-    //     //let answer = ask.nextElementSibling; 
-    //     let answer = ask.parentNode.querySelector('.accordion_item');
+        }
+    });
 
-    //     if (answer.classList.contains('accordion_item_active')) {
-    //         let animate = answer.animate([
-    //             { height: answer.clientHeight + 'px' },
-    //             { height: 0 }
-    //         ], { duration: 200 });
+    function toogleItem(ask) {
+        let answer = ask.nextElementSibling;
+        //let answer = ask.parentNode.querySelector('.accordion_item');
 
-    //         animate.addEventListener('finish', function() {
-    //             answer.classList.remove('accordion_item_active');
-    //         });
-    //     } else {
-    //         answer.classList.add('accordion_item_active');
+        if (answer.classList.contains('open')) {
+            let animate = answer.animate([
+                { height: answer.clientHeight + 'px' },
+                { height: 0 }
+            ], { duration: 300 });
 
-    //         answer.animate([
-    //             { height: 0 },
-    //             { height: answer.clientHeight + 'px' }
-    //         ], { duration: 200 });
-    //     }
-    // }
+            animate.addEventListener('finish', function() {
+                answer.classList.remove('open');
+            });
+        } else {
+            answer.classList.add('open');
+
+            answer.animate([
+                { height: 0 },
+                { height: answer.clientHeight + 'px' }
+            ], { duration: 300 });
+        }
+    }
 });
