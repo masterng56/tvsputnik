@@ -498,7 +498,6 @@ background-position: 0% 50%;
 
 .menu_show {
     display: flex;
-    overflow: hidden;
     background: #fff;
 }
 

@@ -74,10 +74,10 @@ $(document).ready(function() {
                 }
             },
             {
-                breakpoint: 481,
+                breakpoint: 361,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1,
+                    slidesToScroll: 2,
                     variableWidth: true,
                     arrows: false
 
