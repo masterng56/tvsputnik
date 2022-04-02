@@ -152,6 +152,10 @@ button {
     .top_fixed {
         position: fixed;
         z-index: 5;
+        -webkit-animation-name: fadeInUp;
+                animation-name: fadeInUp;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
     }
 }
 
@@ -2192,7 +2196,7 @@ footer {
 
 .btnUp {
     position: fixed;
-    right: 0;
+    right: 10px;
     bottom: 10px;
     width: 80px;
     height: 80px;
@@ -2200,7 +2204,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    -moz-background-color: #fff;
+    /* -moz-background-color: #fff; */
     border: 2px solid #E4E4E4;
     border-radius: 50%;
     -webkit-backdrop-filter: blur(20px);
@@ -2215,4 +2219,26 @@ footer {
 
 .btnUp-visible {
     display: flex;
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        top: -50px;
+    }
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        top: -50px;
+    }
+    to {
+        opacity: 1;
+        top: 0;
+    }
 }

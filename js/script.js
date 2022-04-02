@@ -67,6 +67,15 @@ window.addEventListener('load', function() {
         }
 
     }
+    // фиксированное меню при скроле
+    let navbar = document.getElementById('header_top').classList
+    let active_class = "top_fixed"
 
+    //Слушаем событие прокрутки
+
+    window.addEventListener('scroll', e => {
+        if (pageYOffset > 50) navbar.add(active_class)
+        else navbar.remove(active_class)
+    })
 
 });
