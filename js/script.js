@@ -6,10 +6,33 @@ window.addEventListener('load', function() {
 
         if (menuBtn.classList.contains('burger_btn_close')) {
             menuBtn.classList.remove('burger_btn_close');
-            menuList.classList.remove('menu_show');
+            // menuList.classList.remove('menu_show');
+            menuShowAnim(menuList);
         } else {
             menuBtn.classList.toggle('burger_btn_close');
-            menuList.classList.toggle('menu_show');
+            // menuList.classList.toggle('menu_show');
+            menuShowAnim(menuList);
+        }
+
+        function menuShowAnim() {
+
+            if (menuList.classList.contains('menu_show')) {
+                let animate = menuList.animate([
+                    { height: menuList.clientHeight + 'px' },
+                    { height: 0 }
+                ], { duration: 300 });
+
+                animate.addEventListener('finish', function() {
+                    menuList.classList.remove('menu_show');
+                });
+            } else {
+                menuList.classList.add('menu_show');
+
+                menuList.animate([
+                    { height: 0 },
+                    { height: menuList.clientHeight + 'px' }
+                ], { duration: 300 });
+            }
         }
     });
     //Скролл для меню и кнопки вверх
@@ -74,8 +97,9 @@ window.addEventListener('load', function() {
     //Слушаем событие прокрутки
 
     window.addEventListener('scroll', e => {
-        if (pageYOffset > 50) navbar.add(active_class)
-        else navbar.remove(active_class)
-    })
+            if (pageYOffset > 50) navbar.add(active_class)
+            else navbar.remove(active_class)
+        })
+        //мобильное меню
 
 });

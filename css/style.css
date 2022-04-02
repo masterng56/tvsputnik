@@ -153,9 +153,9 @@ button {
         position: fixed;
         z-index: 5;
         -webkit-animation-name: fadeInUp;
-                animation-name: fadeInUp;
+        animation-name: fadeInUp;
         -webkit-animation-duration: 1s;
-                animation-duration: 1s;
+        animation-duration: 1s;
     }
 }
 
@@ -463,6 +463,10 @@ background-position: 0% 50%;
 .menu_list {
     display: flex;
     list-style: none;
+    /* -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s; */
 }
 
 .menu_hide {
@@ -494,10 +498,13 @@ background-position: 0% 50%;
 
 .menu_show {
     display: flex;
+    overflow: hidden;
+    background: #fff;
 }
 
 .menu_item {
     margin-right: 40px;
+    overflow: hidden;
 }
 
 .menu_item:last-child {
@@ -506,6 +513,7 @@ background-position: 0% 50%;
 
 .menu_link {
     position: relative;
+    overflow: hidden;
 }
 
 .menu_link:hover {
