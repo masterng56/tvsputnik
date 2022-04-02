@@ -97,9 +97,8 @@ window.addEventListener('load', function() {
     //Слушаем событие прокрутки
 
     window.addEventListener('scroll', e => {
-            if (pageYOffset > 50) navbar.add(active_class)
-            else navbar.remove(active_class)
-        })
-        //мобильное меню
+        if (pageYOffset > 50) navbar.add(active_class)
+        else navbar.remove(active_class)
+    })
 
 });

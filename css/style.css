@@ -1210,42 +1210,41 @@ background-position: 0% 50%;
     mask-composite: exclude;
 }
 
-.item_right {
+.inctall_container .item_right {
     margin-right: -439px;
     border-image-source: linear-gradient(95.3deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 @media(max-width:882px) {
-    .item_right {
+    .inctall_container .item_right {
         margin-right: -362px;
     }
 }
 
 @media(max-width:736px) {
-    .item_right {
+    .inctall_container .item_right {
         margin-right: 0;
     }
 }
 
-.item_left {
+.inctall_container .item_left {
     margin-left: -439px;
 }
 
 @media(max-width:882px) {
-    .item_left {
+    .inctall_container .item_left {
         margin-left: -362px;
     }
 }
 
 @media(max-width:736px) {
-    .item_left {
+    .inctall_container .item_left {
         margin-left: 0;
     }
 }
 
-.item_right::before {
+.inctall_container .item_right::before {
     background: linear-gradient(95.3deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
 }
 
 .install_item_title {
