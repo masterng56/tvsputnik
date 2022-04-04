@@ -889,7 +889,7 @@ background-position: 0% 50%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     padding: 20px 12px;
     color: #fff;
@@ -910,6 +910,10 @@ background-position: 0% 50%;
     .ations_item {
         width: 100%;
     }
+}
+
+.actions_title {
+    text-align: center;
 }
 
 .telecarta {
