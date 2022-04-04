@@ -503,7 +503,13 @@ background-position: 0% 50%;
 
 .menu_item {
     margin-right: 40px;
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+
+@media(max-width:727px) {
+    .menu_item {
+        overflow: hidden;
+    }
 }
 
 .menu_item:last-child {
@@ -524,7 +530,7 @@ background-position: 0% 50%;
     position: absolute;
     display: block;
     width: 100%;
-    top: 36px;
+    top: 40px;
     left: 0;
     height: 1px;
     background-color: #063971;
@@ -1558,8 +1564,6 @@ background-position: 0% 50%;
     width: 100%;
 }
 
-.accordion_item_active .item_content {}
-
 .item_content.open {
     display: block;
 }
@@ -1605,7 +1609,7 @@ background-position: 0% 50%;
 
     contacts_wrapper 
 
-    */
+*/
 
 .contacts_title {
     margin-top: 0;
