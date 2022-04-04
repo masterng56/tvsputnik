@@ -107,13 +107,16 @@ window.addEventListener('load', function() {
     let = popupClose = document.querySelector('.popup_close');
 
     callbackBtn.addEventListener('click', function() {
-        console.log(1)
+
         popupFon.classList.add('popup_active');
-        popupFon.addEventListener('click', function() {
-            popupFon.classList.remove('popup_active');
-        });
-        popupClose.addEventListener('ckick', function() {
-            popupFon.classList.remove('popup_active');
-        })
     });
+
+
+
+    popupClose.addEventListener('click', function() {
+        if (popupFon.classList.contains('popup_active')) {
+            popupFon.classList.remove('popup_active');
+        }
+    });
+
 });
