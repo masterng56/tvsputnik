@@ -2218,17 +2218,12 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* -moz-background-color: #fff; */
+    fill: #cfcfcf;
     border: 2px solid #E4E4E4;
     border-radius: 50%;
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     cursor: pointer;
-}
-
-.btnUp:hover {
-    color: #063971;
-    fill: #063971;
 }
 
 .btnUp-visible {
