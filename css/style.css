@@ -1900,9 +1900,15 @@ background-position: 0% 50%;
     box-sizing: border-box;
 }
 
-@media(max-width:360px) {
+@media(max-width:480px) {
     .popup_form {
         padding: 20px;
+    }
+}
+
+@media(max-width:360px) {
+    .popup_form {
+        padding: 15px;
     }
 }
 
